@@ -11,7 +11,13 @@
     <meta property="og:description" content="The best silent alarm app for Android and Wear OS. iOS version coming soon!">
     <meta property="og:image" content="https://customizablesilentalarm.online/images/preview.png">
     <meta property="og:url" content="https://customizablesilentalarm.online">
+
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Customizable Silent Alarm App">
+    <meta name="twitter:description" content="Fully customizable silent alarm for Android and Wear OS. Wake up without disturbing others!">
+    <meta name="twitter:image" content="https://customizablesilentalarm.online/assets/preview.jpg">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -44,4 +50,43 @@
         <p>&copy; 2025 Customizable Silent Alarm. All rights reserved.</p>
     </footer>
 </body>
+
+        <!-- Sitemap -->
+    <script>
+        const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+            <url>
+                <loc>https://customizablesilentalarm.online/</loc>
+                <lastmod>2024-03-01</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>1.0</priority>
+            </url>
+        </urlset>`;
+        const blob = new Blob([sitemapContent], { type: 'application/xml' });
+        const sitemapURL = URL.createObjectURL(blob);
+        console.log('Sitemap available at:', sitemapURL);
+    </script>
+    
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Customizable Silent Alarm App",
+            "operatingSystem": "Android, Wear OS, iOS (coming soon)",
+            "applicationCategory": "LifestyleApplication",
+            "description": "The ultimate silent alarm solution for Android and Wear OS. Fully customizable vibration and flashlight-based wake-ups.",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "url": "https://customizablesilentalarm.online",
+            "image": "https://customizablesilentalarm.online/assets/preview.jpg",
+            "author": {
+                "@type": "Organization",
+                "name": "Customizable Silent Alarm Team"
+            }
+        }
+    </script>
 </html>
